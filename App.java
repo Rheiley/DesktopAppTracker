@@ -46,6 +46,9 @@ public class App {
     }
 
     // methods
+    public void checkFile(){
+        // this method will check if the file has just been opened
+    }
 
 
     
