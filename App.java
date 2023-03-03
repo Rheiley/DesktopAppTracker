@@ -1,14 +1,23 @@
 import java.io.File;
 
 public class App {
-    private File filepath;
+    // attributes
+    private String filepath;
+    private File file;
     private double elapsedMinutes;
     private int numberOfTimesOpened;
     private boolean isOpened;
-    public File getFilepath() {
+
+    //constructors
+    public App(String filepath){
+        this.file = new File(filepath);
+    }
+
+    // getters & setters
+    public String getFilepath() {
         return filepath;
     }
-    public void setFilepath(File filepath) {
+    public void setFilepath(String filepath) {
         this.filepath = filepath;
     }
     public double getElapsedMinutes() {
@@ -29,6 +38,17 @@ public class App {
     public void setOpened(boolean isOpened) {
         this.isOpened = isOpened;
     }
+    public File getFile() {
+        return file;
+    }
+    public File setFile(File file) {
+        return this.file = file;
+    }
+
+    // methods
+
+
+    
 
 
 
